@@ -1,0 +1,193 @@
+:root {
+    --gray-color: #EEEEEE;
+    --yellow-color: #F1C40F;
+    --darkgray-color: #DDDDDD;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: monospace;
+    margin-bottom: 2rem;
+    margin: 0;
+}
+
+/* globales */
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+    margin-right: 2rem;
+}
+
+div {
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+
+/* header */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 3rem 0;
+        padding: 1rem;
+    }
+
+    .header__links {
+        display: flex;
+    }
+
+    img {
+        margin: 0;
+    }
+}
+
+
+.header__links {
+    font-size: 1.5rem;
+}
+.header__links a {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.header__logo {
+    width: 40rem;
+}
+
+.contenedor__correo {
+    text-align: center;
+}
+
+.contenedor__correo input {
+    padding: .5rem;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+/* boton */
+.boton {
+    border: none;
+    cursor: pointer;
+    background-color: var(--yellow-color);
+    font-family: monospace;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/* contenido */
+@media (min-width: 768px) {
+    .contenedor {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.contenedor__contenido {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contenedor__video {
+    margin: 4rem 0; 
+    display: flex;
+    justify-content: center;
+}
+
+.video-responsive {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .video {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+.contenedor__cuadros {
+    width: 90%;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .contenedor__cuadros {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+.contenedor__precios {
+    border: solid 1px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contenedor__precios__titulo {
+    background-color: var(--darkgray-color);
+}
+
+.contenedor__precios__informacion{
+    padding: 1rem 
+}
+
+/* footer */
+.footer {
+    background-color: var(--darkgray-color);
+    padding: .5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* configuracion de icono */
+.icon {
+    visibility: hidden;
+}
+
+@media (min-width: 768px) {
+    .icon {
+        visibility: visible;
+    }
+}
